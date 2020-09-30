@@ -1,7 +1,7 @@
 import os,subprocess
 # from constants import WORKING_DIR
 
-os.chdir("/Users/sinarest/Desktop/DEV_Stuff/Python/git_check")
+os.chdir("../git_check")
 
 cmd = "git add ."
 subprocess.check_output(cmd, shell=True)  
