@@ -1,3 +1,3 @@
 # git_check
 
-## adds your updated files automatically
+## Adds your updated files automatically

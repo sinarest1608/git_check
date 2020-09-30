@@ -1,5 +1,5 @@
 import os,subprocess
-# from constants import WORKING_DIR
+
 
 os.chdir("../git_check")
 
@@ -12,7 +12,7 @@ returned_value = subprocess.check_output(status, shell=True)
 print('updated files:', returned_value)
 
 if not returned_value==b'':
-    commit_message='"Done Changed in the following files '
+    commit_message='"Added/Updated Following files '
     if len(str(returned_value).split(r'\n'))>0:        
         for file_name in str(returned_value).split(r'\n'):
                     commit_message=commit_message+file_name[5:]+" "
