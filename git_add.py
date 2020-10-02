@@ -6,7 +6,7 @@ parser.add_argument("loc",
                     help="Add complete path of the repository to update")
 parser.add_argument("-b","--branch", 
                     help="branch name for push and pull",
-                    default="master")
+                    default="main")
 parser.add_argument("-m","--message", 
                     help="commit message",
                     default=" ")
@@ -27,7 +27,7 @@ try:
     # commit
     if not returned_value==b'':
 
-        if args.branch !="master":
+        if args.branch !="main":
             subprocess.check_output(f"git checkout -b {args.branch}", shell=True)  
         commit_message='Added/Updated Following files '
 
